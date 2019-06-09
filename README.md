@@ -1,19 +1,21 @@
 # MultiCombinator
 Generates all combination of multiple arrays.
-Can be used as an iterator using methods like next(), rewind().
+Can be used as an iterator using methods like `next()`, `rewind()`.
 
-Given two arrays, the following code:
+Given two arrays the following code:
 
+```php
 $lists = [
-  'a' => [ 'A', 'B', 'C' ],
-  'b' => [ 'A', 'B', 'C' ]
-]
+  'a' => ['A', 'B', 'C'],
+  'b' => ['A', 'B', 'C']
+];
 
-$c = new MultiCombinator( $lists );
-print_r( $c->getAll() );
+$c = new MultiCombinator($lists);
+print_r($c->getAll());
+```
 
-
-prints an array containing the following combinations:
+Prints an array containing the following combinations:
+```
 A A
 A B
 A C
@@ -25,3 +27,4 @@ B C
 C A
 C B
 C C
+```
